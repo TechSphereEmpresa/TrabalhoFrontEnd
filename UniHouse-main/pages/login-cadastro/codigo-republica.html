@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código da república</title>
+    <link rel="icon" href="/assets/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="/css/login/codigo-republica.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header>
+        <a href="/pages/login-cadastro/login-inicial.html">
+            <img src="/assets/icons/common/seta-voltar.svg" alt="Voltar">
+        </a>
+    </header>
+
+    <main>
+        <div class="codigo-info">
+            <h2 class="titulo-codigo">Código da República</h2>
+
+            <p class="texto-explicativo">Solicite a um administrador da sua república o código</p>
+
+            <input type="text" class="input-codigo" placeholder="Código">
+
+            <button id="verificar-btn">Verificar</button>
+            
+        </div>
+
+        <div id="republica-acesso">
+            <img class="cancelar" src="/assets/icons/login-cadastro/x.svg" alt="">
+
+            <div class="icon-nome">
+                <img src="/assets/icons/common/icon-rep.svg" alt="Foto de perfil da república">
+                <h1>[Nome da república]</h1>
+            </div>
+            <a class="btn" href="entradaSolicitada.html">
+                <button class="solicitar-btn">Solicitar acesso</button>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById("verificar-btn").addEventListener("click", function() {
+            document.getElementById("republica-acesso").style.display = "flex";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 49px 100px 15px 100px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.back-button {
+    font-size: 30px;
+    color: #656F77;
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+}
+
+.div-dados {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.input-field.nome {
+    width: 100%;
+}
+
+.input-field, .radio-option {
+    width: 48%;
+}
+.nome, .input-field, .radio-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    padding: 0px 14px;
+    border-radius: 18px; 
+    font-size: 16px;
+    border: none;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.radio-option {
+    position: relative;
+    justify-content: start;
+    gap: 6px;
+    background-color: transparent;
+    color: #fff;
+    transition: background-color 0.5s;
+}
+
+.radio-option:hover { 
+    background: #232323;
+}
+
+.input-field, .nome{
+    background-color: #fff;
+    color: #000;
+    font-family: Urbanist;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    transition: background-color 0.5s;
+}
+
+.input-field:hover, .nome:hover {
+    background-color: #EAEAEA;
+}
+
+.btn-registrar {
+    width: 100%;
+    background-color: #F4A503;
+    color: #000;
+    font-family: Urbanist;
+    height: 54px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.btn-registrar:hover {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #F4A503;
+}
+
+.radio-option.selected {
+    background-color: #264370; 
+    border: #264370;
+    img {
+        content: url('/assets/icons/login-cadastro/check-cadastro.svg');
+    }
+}
+
+.radio-option input[type="radio"] {
+    display: none; 
+}
+
+@media (max-width: 1000px) {
+    header {
+        padding: 30px 20px 20px 20px;
+    }
+
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) { 
+    .div-dados {
+        flex-direction: column;
+    }
+
+    .input-field, .radio-option {
+        width: 100%;
+    }
+}

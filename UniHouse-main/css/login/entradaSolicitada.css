@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    padding: 49px 100px 15px 100px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 226px;;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.Texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.check-icon {
+    width: 100px; /* Ajuste o tamanho do ícone */
+}
+
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+p {
+    color: var(--Gray, #8391A1);
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 150%; 
+    width: 226px;
+}

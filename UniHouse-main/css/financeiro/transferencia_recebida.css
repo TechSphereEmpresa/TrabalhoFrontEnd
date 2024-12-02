@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f4a503;
+  --light: #ffffff;
+  --medium: #bcbcbc;
+  --dark: #000000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+
+  max-width: 800px;
+}
+
+.back-button {
+  font-size: 1.5em;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Ajusta o padding para garantir que o botão tenha o espaço adequado */
+  width: 40px; /* Largura mínima para o botão */
+  height: 40px; /* Altura mínima para o botão */
+  overflow: hidden; /* Garante que nada saia do limite do botão */
+  border-radius: 50%; /* Garante que o botão seja arredondado */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+  gap: 59px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 59px;
+}
+
+.title-transferencia h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  font-family: Urbanist;
+  font-weight: 600;
+  line-height: 108%;
+  letter-spacing: -0.5px;
+}
+
+.title-transferencia {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.date {
+  margin-bottom: 1em;
+  color: var(--medium);
+  font-family: Urbanist;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.info p {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 0.5em;
+}
+
+.comprovante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.comprovante-img {
+  width: 314.859px;
+  height: 419.402px;
+  border-radius: 13px;
+  border: 3px solid var(--primary-color);
+  box-shadow: 0px 10px 21px -2px rgba(0, 0, 0, 0.12);
+  padding: 12px;
+}
+
+.comprovante p {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+/* Ajustes para tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .back-button {
+    align-self: flex-start;
+    margin-bottom: 0.5em;
+  }
+
+  .title-transferencia h1 {
+    font-size: 1.6em;
+  }
+}
+
+/* Ajustes para mobile */
+@media (max-width: 599px) {
+  .content {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .back-button {
+    align-self: flex-start;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Ajusta o padding para que o botão tenha espaço suficiente */
+    width: 40px; /* Largura mínima do botão */
+    height: 40px; /* Altura mínima do botão */
+    overflow: hidden; /* Garante que a seta não saia do botão */
+    border-radius: 50%; /* Botão arredondado */
+  }
+
+  .back-button img {
+    width: 24px; /* Tamanho do ícone */
+    height: auto; /* Manter proporção da seta */
+  }
+
+  .title-transferencia h1 {
+    font-size: 1.4em;
+    line-height: 1.2em; /* Ajusta o espaçamento do título para caber sem cortes */
+  }
+
+  .date,
+  .info p,
+  .comprovante p {
+    font-size: 14px;
+  }
+
+  .comprovante-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}

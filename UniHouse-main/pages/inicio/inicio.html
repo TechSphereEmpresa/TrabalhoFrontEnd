@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="icon" href="../../assets/images/logo.png" type="iamge/png">
+    <link rel="stylesheet" href="../../css/inicio/inicio.css">
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+
+<body>
+    <header>
+        <div id="header-profile-user-rep">
+            <a href="/pages/chat/administrador/adm-pg1-editar.html">
+                <img class="profile-icon" src="/assets/icons/common/profile.svg" alt="Foto de perfil do usuário">
+            </a>
+
+            <div id="header-user">
+                <p id="user-nome">Olá, [Nome]</p>
+
+                <div id="header-rep">
+                    <img src="../../assets/icons/home/loc.svg" alt="">
+                    <a href="/pages/chat/administrador/grupo-descrição.html">
+                        <p id="rep-nome">[Nome república]</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="header-config-not">
+            <a href="configuracoes.html">
+                <img src="../../assets/icons/home/settings.svg" alt="">
+            </a>
+
+            <a href="notificacoes.html">
+                <img src="../../assets/icons/home/notification.svg" alt="">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="secao-menu">
+            <a class="menu-box-link" id="menu-calendario" href="calendario.html">
+                <img src="../../assets/icons/home/calendario.svg" alt="">
+                <p>Calendário</p>
+            </a>
+
+            <a class="menu-box-link" id="menu-votacao" href="votacao/votacao.html">
+                <img src="/assets/icons/home/votacao.svg" alt="">
+                <p>Votação</p>
+            </a>
+
+            <a class="menu-box-link" id="menu-multas" href="multas/multas.html">
+                <img src="/assets/icons/home/multas.svg" alt="">
+                <p>Multas</p>
+            </a>
+        </section>
+
+        <section id="secao-multa-tarefas">
+            <a id="aviso-multa" href="multas/multa-descricao.html">
+                <div id="aviso-multa-titulo-info">
+                    <p>Você tem uma multa <br />pendente</p>
+                    <div id="aviso-multa-info">
+                        <img src="/assets/icons/home/balanca.svg" alt="">
+                        <p>5/6 pessoas votaram a favor</p>
+                    </div>
+                </div>
+                <img src="/assets/icons/home/seta-multa.svg" alt="">
+            </a>
+
+            <section id="secao-tarefas">
+                <div id="tarefas-filtro">
+                    <h1>Tarefas</h1>
+
+                    <select id="filtro">
+                        <option value="Atrasadas">Atrasadas</option>
+                        <option value="Hoje">Hoje</option>
+                        <option value="Essa semana">Essa semana</option>
+                        <option value="Esse mês">Esse mês</option>
+                        <option value="Concluídas">Concluídas</option>
+                    </select>
+                </div>
+
+                <div id="tarefas-botao">
+
+                    <div id="tarefas">
+
+                        <a class="box-tarefa" href="tarefa/tarefa-descricao.html">
+                            <img src="/assets/icons/home/tarefa.svg" alt="">
+
+                            <div class="box-tarefa-info">
+                                <p class="tarefa-nome">Lavar banheiro</p>
+
+                                <div class="box-tarefa-info-data">
+                                    <img src="/assets/icons/home/data.svg" alt="">
+                                    <time class="tarefa-data" datetime="2024-01-18">18/01/2024</time>
+                                    <p class="tarefa-data">-</p>
+                                    <img src="/assets/icons/home/relogio.svg" alt="">
+                                    <p class="tarefa-data">09:00</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="box-tarefa" href="tarefa/tarefa-descricao.html">
+                            <img src="/assets/icons/home/tarefa.svg" alt="">
+
+                            <div class="box-tarefa-info">
+                                <p class="tarefa-nome">Lavar banheiro</p>
+
+                                <div class="box-tarefa-info-data">
+                                    <img src="/assets/icons/home/data.svg" alt="">
+                                    <time class="tarefa-data" datetime="2024-01-18">18/01/2024</time>
+                                    <p class="tarefa-data">-</p>
+                                    <img src="/assets/icons/home/relogio.svg" alt="">
+                                    <p class="tarefa-data">09:00</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="box-tarefa" href="tarefa/tarefa-descricao.html">
+                            <img src="/assets/icons/home/tarefa.svg" alt="">
+
+                            <div class="box-tarefa-info">
+                                <p class="tarefa-nome">Lavar banheiro</p>
+
+                                <div class="box-tarefa-info-data">
+                                    <img src="/assets/icons/home/data.svg" alt="">
+                                    <time class="tarefa-data" datetime="2024-01-18">18/01/2024</time>
+                                    <p class="tarefa-data">-</p>
+                                    <img src="/assets/icons/home/relogio.svg" alt="">
+                                    <p class="tarefa-data">09:00</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <a href="tarefa/nova-tarefa.html">
+                        <div id="botao-nova-tarefa">
+                            <img src="/assets/icons/home/mais.svg" alt="">
+                            <p>Nova tarefa</p>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <nav class="menu">
+        <a href="" class="menu-item active">
+            <img src="/assets/icons/common/nav/inicio.svg" alt="Início" class="menu-icon">
+            <img class="img-active" src="/assets/icons/common/nav/inicio-active.svg" alt="Início" class="menu-icon">
+            Início
+        </a>
+        <a href="/pages/financeiro/financeiro.html" class="menu-item">
+            <img src="/assets/icons/common/nav/financeiro.svg" alt="Financeiro" class="menu-icon">
+            <img class="img-active" src="/assets/icons/common/nav/financeiro-active.svg" alt="Financeiro" class="menu-icon">
+            Financeiro
+        </a>
+        <a href="/pages/relatorio/relatorio.html" class="menu-item">
+            <img src="/assets/icons/common/nav/relatorio.svg" alt="Relatório" class="menu-icon">
+            <img class="img-active" src="/assets/icons/common/nav/reatorio-active.svg" alt="Relatório" class="menu-icon">
+            Relatório
+        </a>
+        <a href="/pages/chat/administrador/chat-administrador.html" class="menu-item"> 
+            <img src="/assets/icons/common/nav/chat.svg" alt="Chat" class="menu-icon">
+            <img class="img-active" src="/assets/icons/common/nav/chat-active.svg" alt="Chat" class="menu-icon">
+            Chat
+        </a>
+    </nav>
+
+    <script src="controleAcesso.js"></script>
+</body>
+
+</html>

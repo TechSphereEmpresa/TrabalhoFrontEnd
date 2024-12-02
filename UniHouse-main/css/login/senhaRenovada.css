@@ -1,0 +1,15 @@
+.check-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.check-icon {
+    width: 100px; /* Ajuste o tamanho do ícone */
+    height: 100px;
+}

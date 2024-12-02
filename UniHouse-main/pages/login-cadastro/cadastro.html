@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/css/login/cadastro.css">
+    <link rel="icon" href="/assets/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <header>
+        <a href="/pages/login-cadastro/login-inicial.html">
+            <img src="/assets/icons/common/seta-voltar.svg" alt="Voltar">
+        </a>
+    </header>
+
+    <main>
+        <h1>Faça o cadastro da sua conta para começar</h1>
+        <form id="formCadastro">
+            <div class="div-dados">
+                <input class="nome input-field" type="text" placeholder="Nome">
+                <input type="email" class="input-field" placeholder="Email universitário">
+                <input type="tel" class="input-field" placeholder="Telefone">
+                <input type="password" class="input-field" placeholder="Senha">
+                <input type="password" class="input-field" placeholder="Confirmar senha">
+
+                <label class="radio-option" id="moradorOption">
+                    <input type="radio" name="role" value="morador">
+                    <img src="/assets/icons/login-cadastro/bolinha-cadastro.svg" alt="Opção Morador">
+                    <span>Morador (entrar em uma república)</span>
+                </label>
+                <label class="radio-option" id="adminOption">
+                    <input type="radio" name="role" value="administrador">
+                    <img src="/assets/icons/login-cadastro/bolinha-cadastro.svg" alt="Opção Administrador">
+                    <span>Administrador (criar uma república)</span>
+                </label>
+                
+                <button type="submit" class="btn-registrar">Registrar</button>
+            </div>
+        </form>
+    </main>
+    
+    <script src="/js/guardar-perfil.js" defer></script>
+
+    <script>
+        const moradorOption = document.getElementById('moradorOption');
+        const adminOption = document.getElementById('adminOption');
+
+        moradorOption.addEventListener('click', function () {
+            moradorOption.classList.add('selected');
+            adminOption.classList.remove('selected');
+        });
+
+        adminOption.addEventListener('click', function () {
+            adminOption.classList.add('selected');
+            moradorOption.classList.remove('selected');
+        });
+    </script>
+</body>
+</html>

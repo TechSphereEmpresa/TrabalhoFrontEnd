@@ -1,0 +1,43 @@
+.input-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Estilo para os inputs de código */
+.input-codigo {
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid #F4A503;
+    border-radius: 8px;
+    color: white;
+    font-family: Urbanist;
+    background: #000;
+    outline: none;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -0.3px;
+}
+
+/* Estilo para o botão */
+a.btn {
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        /* Reduz a largura no mobile */
+    }
+
+    .input-codigo {
+        width: 50px;
+        /* Reduz a largura dos inputs no mobile */
+        height: 50px;
+        font-size: 20px;
+    }
+}
