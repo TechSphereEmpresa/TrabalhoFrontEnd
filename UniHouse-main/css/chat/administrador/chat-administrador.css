@@ -349,11 +349,11 @@ body {
     color: var(--silver-custom); 
     font-weight: 500;
 }
-/* end: Content side - Lateral do Chat */
+/* Fim: Content side - Lateral do Chat */
 
 
 
-/* start: Conversation - Parte da conversa - Chat */
+/* Ínicio: Conversation - Parte da conversa - Chat */
 
 .conversation-title {
     font-weight: bold;
@@ -784,9 +784,9 @@ body {
     margin-top: 16px;
 }
 
-/* end: Conversation - Parte da conversa - Chat */
+/* Fim: Conversation - Parte da conversa - Chat */
 
-/* start: Breakpoints */
+/* Ínicio: Breakpoints */
 @media screen and (max-width: 1600px) {
     .chat-container {
         max-width: unset;
@@ -871,4 +871,4 @@ body {
 
 
 
-/* end: Breakpoints */
+/* Fim: Breakpoints */
